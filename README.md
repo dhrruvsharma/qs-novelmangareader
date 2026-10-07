@@ -39,7 +39,8 @@ so it runs next to your own Quickshell config (or none) without touching it.
   don't package Quickshell, so it tells you where to get it)
 - downloads the Symbols Nerd Font into `~/.local/share/fonts` if you have no Nerd Font
 - links the folder to `~/.config/qs-novelmangareader` if you cloned it elsewhere
-- puts the `qs-novelmangareader` command in `~/.local/bin`
+- puts the `qs-novelmangareader` command on your `PATH`: in `~/.local/bin` if that's on it, otherwise
+  (after asking) in `/usr/local/bin`, so it works in every shell and in keybinds right away
 - makes a venv with `flask`, `requests` and `curl_cffi` in
   `~/.local/share/qs-novelmangareader/venv` for the backends
 
